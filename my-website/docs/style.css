@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  transition: background 0.3s;
+  font-family: sans-serif;
+}
+
+.card {
+  text-align: center;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background: white;
+  transition: background 0.3s, color 0.3s;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.dark-mode {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .card {
+  background: #2c2c2c;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.1);
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 20px;
+    margin: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
